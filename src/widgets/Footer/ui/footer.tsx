@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Separator } from "@/components/ui/separator";
 import { footerModel } from "../model";
+import Image from "next/image";
 
 export function Footer() {
     const { footerLinks, socialLinks, currentYear } = footerModel();
@@ -10,7 +11,7 @@ export function Footer() {
             <div className="grid md:grid-cols-4 gap-8">
                 <div>
                     <div className="flex items-center gap-2 mb-4">
-                        <img src="/logo.svg" alt="" width="52"  />
+                        <Image src="/logo.svg" alt="" width="52"  />
                     </div>
                     <p className="text-slate-400 text-sm">
                         Transform your PDFs to EPUB with perfect precision. Data integrity guaranteed.

@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MobileMenu } from "./mobile-menu";
 import { useNavigation } from "../lib/use-navigation";
+import Image from "next/image";
 
 export function Header() {
     const { navItems, activeTab, setActiveTab, isScrolled } = useNavigation();
@@ -14,7 +15,7 @@ export function Header() {
         }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center gap-3 ">
-                        <img src="/logo.svg" alt="" width="52"  />
+                        <Image src="/logo.svg" alt="" width="52"  />
                 </div>
 
                 {/* Desktop Navigation */}
