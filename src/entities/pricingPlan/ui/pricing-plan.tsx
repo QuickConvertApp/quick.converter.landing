@@ -13,7 +13,6 @@ export function PricingPlan({
                                 popular = false,
                                 className = ""
                             }) {
-    const accentColor = "rgb(59, 130, 246)"; // blue-500
 
     return (
         <div className={`transition-all duration-300 ${className}`}>
