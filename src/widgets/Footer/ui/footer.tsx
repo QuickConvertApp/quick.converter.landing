@@ -11,7 +11,7 @@ export function Footer() {
             <div className="grid md:grid-cols-4 gap-8">
                 <div>
                     <div className="flex items-center gap-2 mb-4">
-                        <Image src="/logo.svg" alt="" width="52"  />
+                        <Image src="/logo.svg" alt="" width="52" height="52" />
                     </div>
                     <p className="text-slate-400 text-sm">
                         Transform your PDFs to EPUB with perfect precision. Data integrity guaranteed.

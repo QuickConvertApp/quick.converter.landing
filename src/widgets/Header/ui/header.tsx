@@ -15,7 +15,7 @@ export function Header() {
         }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
                 <div className="flex items-center gap-3 ">
-                        <Image src="/logo.svg" alt="" width="52"  />
+                        <Image src="/logo.svg" alt="" width="52" height="52" />
                 </div>
 
                 {/* Desktop Navigation */}
