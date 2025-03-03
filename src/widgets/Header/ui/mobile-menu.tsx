@@ -21,9 +21,11 @@ export function MobileMenu({ isOpen, navItems, activeTab, onTabChange }) {
                         {item.label}
                     </Link>
                 ))}
-                <Button variant="outline" className="mt-2 border-gray-700 text-white hover:bg-white hover:text-black">
-                    Login
-                </Button>
+                <Link href="/sign-in" className="hidden md:block">
+                    <Button variant="outline" className="mt-2 border-gray-700 text-white hover:bg-white hover:text-black">
+                        Login
+                    </Button>
+                </Link>
             </div>
         </div>
     );

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
 
 export function Hero() {
     return (
@@ -24,9 +25,11 @@ export function Hero() {
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-5 justify-center mb-16">
-                    <Button size="lg" variant="ghost" className="cursor-pointer !bg-white bg-gradient-to-r text-black shadow-lg shadow-blue-600/10 hover:shadow-blue-600/20 transition-all hover:-translate-y-1 text-lg py-6">
-                        Start Converting Now
-                    </Button>
+                    <Link href="/sign-in" className="hidden md:block">
+                        <Button size="lg" variant="ghost" className="cursor-pointer !bg-white bg-gradient-to-r text-black shadow-lg shadow-blue-600/10 hover:shadow-blue-600/20 transition-all hover:-translate-y-1 text-lg py-6">
+                            Start Converting Now
+                        </Button>
+                    </Link>
                     <Button size="lg" variant="default" className="cursor-pointer border-white/20 text-lg py-6 group flex items-center">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="mr-2 group-hover:animate-pulse text-blue-400">
                             <circle cx="12" cy="12" r="10" />

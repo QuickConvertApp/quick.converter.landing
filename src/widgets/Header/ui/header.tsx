@@ -14,9 +14,11 @@ export function Header() {
             isScrolled ? "py-3 bg-gray-900 backdrop-blur-sm shadow-md border-b border-gray-800" : "py-6 bg-transparent"
         }`}>
             <div className="container mx-auto px-4 flex justify-between items-center">
-                <div className="flex items-center gap-3 ">
-                        <Image src="/logo.svg" alt="" width="52" height="52" />
-                </div>
+                <Link href="/" className={"cursor-pointer"}>
+                    <div className=" flex items-center justify-center  gap-3">
+                        <Image src="/logo.svg" alt="logo" width={72} height={72} />
+                    </div>
+                </Link>
 
                 {/* Desktop Navigation */}
                 <nav className="hidden md:flex items-center gap-8">
@@ -40,12 +42,17 @@ export function Header() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <Button variant="default" className="cursor-pointer hidden md:inline-flex border-gray-600 text-white hover:bg-white hover:text-black">
+                    <Link href="/sign-in" className="hidden md:block">
+
+                    <Button  variant="default" className="cursor-pointer hidden md:inline-flex border-gray-600 text-white hover:bg-white hover:text-black">
                         Login
                     </Button>
-                    <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 transition-all">
-                        Get Started
-                    </Button>
+                    </Link>
+                    <Link href="/sign-up" className="">
+                        <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 transition-all">
+                            Get Started
+                        </Button>
+                    </Link>
 
                     {/* Mobile menu button */}
                     <Button
