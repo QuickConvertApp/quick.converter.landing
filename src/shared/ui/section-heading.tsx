@@ -4,7 +4,7 @@ export function SectionHeading({badge, title, description, className = ""}) {
     return (
         <div className={`text-center mb-16 ${className}`}>
             {badge && (
-                <Badge variant="outline" className="mb-4   font-medium">
+                <Badge variant="default" className="mb-4   font-medium">
                     {badge}
                 </Badge>
             )}

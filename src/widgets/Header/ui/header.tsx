@@ -40,7 +40,7 @@ export function Header() {
                 </nav>
 
                 <div className="flex items-center gap-4">
-                    <Button variant="outline" className="cursor-pointer hidden md:inline-flex border-gray-600 text-white hover:bg-white hover:text-black">
+                    <Button variant="default" className="cursor-pointer hidden md:inline-flex border-gray-600 text-white hover:bg-white hover:text-black">
                         Login
                     </Button>
                     <Button className="cursor-pointer bg-white text-black hover:bg-gray-200 transition-all">
