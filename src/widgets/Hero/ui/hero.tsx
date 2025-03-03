@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import {FileUploader} from "@/features/fileUpload";
 
 export function Hero() {
     return (
