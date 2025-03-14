@@ -1,9 +1,11 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
-
-
-
+import { ToastProvider } from "@/components/ui/use-toast";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} className="font-mono"  />;
+  return (
+    <ToastProvider>
+      <Component {...pageProps} className="font-mono" />
+    </ToastProvider>
+  );
 }
